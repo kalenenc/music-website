@@ -1,3 +1,173 @@
+/*---- BASICS ----*/
+
+* {
+	padding:0px;
+	margin:0px;
+}
+
 body {
 	font-family: 'Alegreya Sans', sans-serif;
+	font-weight:200;
+	font-size:1.8em;
+	
+}
+
+/*----- NAV ----*/
+
+header {
+	text-align:center;
+
+}
+
+header h1 {
+	font-family: 'Cedarville Cursive', cursive;
+	margin-top:2em;
+	color:#FFB190;
+}
+
+header h1:hover {
+	opacity:0.5;
+	transition:1s;
+}
+
+a, a:hover {
+	text-decoration:none;
+	color:inherit;
+}
+
+nav ul {
+	overflow:hidden;
+	-webkit-transition:max-height 1s;
+	-ms-transition:max-height 1s;
+	-moz-transition:max-height 1s;
+	-o-transition:max-height 1s;
+	transition: max-height 1s;
+}
+
+nav ul li {
+	font-family: 'Julius Sans One', sans-serif;
+	display:inline-block;
+	padding: 1em;
+	box-sizing: border-box;
+
+}
+
+nav ul li:hover {
+	background-color:#F9F9F9;
+	color:#FF7070;
+	transition:1s;
+}
+
+.handle{
+	font-size: 1.5em;
+    color: grey;
+    text-align:left;
+    padding:10px 10px;
+    cursor:pointer;
+    display:none;
+    margin-left:0.7em;
+}
+
+
+
+@media screen and (max-width:600px) {
+	nav ul {
+		max-height:0px;
+	}
+
+	.showing {
+
+		max-height:15em;
+		display:block;
+	}
+
+	nav ul li {
+		width:100%;
+		padding:15px;
+	}
+
+
+	.handle {
+		display:block;
+	}
+}
+
+
+
+
+/* ------ HEADER IMAGE ------- */
+
+.intro {
+	text-align:center;
+	position:relative;
+	width:100%;
+}
+
+.intro img {
+	width:90%;
+	
+
+}
+
+.intro h2 {
+	position:absolute;
+	top: 40%;
+	left: 54%;
+	width:40%;
+	font-size:3em;
+	font-family: 'Julius Sans One', sans-serif;
+	color:white;
+	text-shadow: 1px 1px 5px grey;
+	
+}
+
+.intro h2:hover {
+	opacity:0.3;
+	transition:1s;
+}
+
+
+/*---- HEADER RESPONSIVENESS ----*/
+
+@media screen and (max-width:630px) {
+	.intro h2 {
+		font-size:2.5em;
+	}
+}
+
+@media screen and (max-width:516px) {
+	.intro h2 {
+		font-size:2em;
+	}
+}
+
+@media screen and (max-width:415px) {
+	.intro h2 {
+		font-size:1.5em;
+	}
+}
+
+/*---- 3 IMAGES ----*/
+
+.img-bar {
+	text-align:center;
+
+}
+
+.three-images {
+	width:33%;
+	float:left;
+	margin-top:5em;
+	padding:1em;
+}
+
+@media screen and (max-width:800px) {
+	.three-images {
+		width:80%;
+		
+		padding-right:1em;
+		padding-left:1em;
+
+
+	}
 }
