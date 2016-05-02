@@ -163,11 +163,12 @@ nav ul li:hover {
 
 @media screen and (max-width:800px) {
 	.three-images {
+		display:none;
+	}
+
+	.three-images-after {
+		display:block;
 		width:80%;
-		
-		padding-right:1em;
-		padding-left:1em;
-
-
+		margin:0 auto;
 	}
 }
