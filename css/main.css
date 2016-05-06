@@ -12,6 +12,13 @@ body {
 	
 }
 
+/*---- BOOTSTRAP NONSENSE ---- */
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+	padding:0;
+}
+
+
 /*----- NAV ----*/
 
 header {
@@ -104,10 +111,11 @@ nav ul li:hover {
 }
 
 .intro img {
-	width:90%;
+	width:100%;
 	
 
 }
+
 
 .intro h2 {
 	position:absolute;
@@ -149,26 +157,93 @@ nav ul li:hover {
 
 /*---- 3 IMAGES ----*/
 
-.img-bar {
+/*.img-bar {
 	text-align:center;
+	position:relative;
 
+}*/
+
+.first-container {
+	position:relative;
+	text-align:center;
+	
 }
 
 .three-images {
-	width:33%;
-	float:left;
+	width:100%;
+	margin-bottom:0.5em;
+	
+	
+}
+
+.img-bar {
 	margin-top:5em;
-	padding:1em;
+	margin-bottom:5em;
 }
 
-@media screen and (max-width:800px) {
+.about-cover {
+	position:absolute;
+	color:white;
+	background-color:#FF9D9D;
+	width:100%;
+	top:55%;
+
+}
+
+.about-cover p {
+	margin:0;
+	font-size:2em;
+}
+
+.music-cover {
+	position:absolute;
+	color:white;
+	background-color:#FFB190;
+	width:100%;
+	top:45%;
+}
+
+.music-cover p {
+	margin:0;
+	font-size:2em;
+}
+
+.blog-cover {
+	position:absolute;
+	color:white;
+	background-color:#FFA565;
+	width:100%;
+	top:45%;
+}
+
+.blog-cover p {
+	margin:0;
+	font-size:2em;
+}
+
+@media screen and (min-width:570px) {
 	.three-images {
-		display:none;
+		display:inline-block;
+		float:left;
+		width:33%;
+		padding:0.3em;
 	}
 
-	.three-images-after {
-		display:block;
-		width:80%;
-		margin:0 auto;
+	#first-image {
+		margin-left:5px;
 	}
+
+	
 }
+
+
+/*---- TEXT BLURB ----*/
+
+/*.blurb h2 {
+	margin:0 auto;
+}
+
+.blurb-text {
+	width:25%;
+	margin:0 auto;
+}*/
