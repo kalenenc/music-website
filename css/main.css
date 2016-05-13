@@ -1,4 +1,4 @@
-/*---- BASICS ----*/
+---- BASICS ----*/
 
 * {
 	padding:0px;
@@ -157,23 +157,21 @@ nav ul li:hover {
 
 /*---- 3 IMAGES ----*/
 
-/*.img-bar {
-	text-align:center;
-	position:relative;
 
-}*/
 
-.first-container {
-	position:relative;
-	text-align:center;
-	
+.image-container {
+	width:100%;
+	margin-bottom:0.5em;
+	position:relative;	
+	text-align: center;
+	margin:0.5em;
 }
 
 .three-images {
+	height:auto;
+	display: block;
+	margin: 0 auto;
 	width:100%;
-	margin-bottom:0.5em;
-	
-	
 }
 
 .img-bar {
@@ -181,12 +179,60 @@ nav ul li:hover {
 	margin-bottom:5em;
 }
 
+.cover p {
+	margin:0;
+	font-size:2em;
+}
+
+.cover {
+	position:absolute;
+	color:white;
+	width:100%;
+	top:45%;
+}
+
 .about-cover {
+	background-color:#FF9D9D;
+}
+
+
+.music-cover {
+	background-color:#FFB190;
+}
+
+.blog-cover {
+	background-color:#FFA565;
+}
+
+
+
+@media screen and (min-width:570px) {
+	.image-container {
+		display:block;
+		float:left;
+		width:33%;
+		/*padding:0.3em;*/
+		margin-bottom:4em;
+
+	}
+
+	.cover {
+		top:40%;
+	}
+
+
+
+/*	#first-image {
+		margin-left:5px;
+	}
+*/
+	/*.about-cover {
 	position:absolute;
 	color:white;
 	background-color:#FF9D9D;
 	width:100%;
-	top:55%;
+	top:45%;
+	margin:0.3em;
 
 }
 
@@ -201,6 +247,8 @@ nav ul li:hover {
 	background-color:#FFB190;
 	width:100%;
 	top:45%;
+	left:0;
+	margin:0.3em;
 }
 
 .music-cover p {
@@ -212,38 +260,36 @@ nav ul li:hover {
 	position:absolute;
 	color:white;
 	background-color:#FFA565;
-	width:100%;
-	top:45%;
+	left:67.3%;
+	width:33%;
+	margin:0.3em;
+
+	
 }
 
 .blog-cover p {
 	margin:0;
 	font-size:2em;
-}
-
-@media screen and (min-width:570px) {
-	.three-images {
-		display:inline-block;
-		float:left;
-		width:33%;
-		padding:0.3em;
-	}
-
-	#first-image {
-		margin-left:5px;
-	}
-
+}*/
 	
 }
 
 
 /*---- TEXT BLURB ----*/
 
-/*.blurb h2 {
-	margin:0 auto;
+.blurb {
+	margin-top:1em;
+	
 }
 
-.blurb-text {
-	width:25%;
-	margin:0 auto;
-}*/
+
+
+.horizontal-lines {
+	background-color:black;
+	width:200px;
+	height:200px;
+	clear:both;
+}
+
+
+/*A color to save #A07C7C
