@@ -158,6 +158,11 @@ nav ul li:hover {
 /*---- 3 IMAGES ----*/
 
 
+.img-bar {
+	margin-top:5em;
+	margin-bottom:5em;
+
+}
 
 .image-container {
 	width:100%;
@@ -168,16 +173,10 @@ nav ul li:hover {
 }
 
 .three-images {
-	height:auto;
-	display: block;
-	margin: 0 auto;
 	width:100%;
+
 }
 
-.img-bar {
-	margin-top:5em;
-	margin-bottom:5em;
-}
 
 .cover p {
 	margin:0;
@@ -208,88 +207,61 @@ nav ul li:hover {
 
 @media screen and (min-width:570px) {
 	.image-container {
-		display:block;
-		float:left;
-		width:33%;
-		/*padding:0.3em;*/
+		/*text-align:center;*/
+		display:inline-block;
+		width:30%;
 		margin-bottom:4em;
 
+
 	}
+
+	.img-bar {
+		text-align:center;
+	}
+
 
 	.cover {
 		top:40%;
 	}
-
-
-
-/*	#first-image {
-		margin-left:5px;
-	}
-*/
-	/*.about-cover {
-	position:absolute;
-	color:white;
-	background-color:#FF9D9D;
-	width:100%;
-	top:45%;
-	margin:0.3em;
-
-}
-
-.about-cover p {
-	margin:0;
-	font-size:2em;
-}
-
-.music-cover {
-	position:absolute;
-	color:white;
-	background-color:#FFB190;
-	width:100%;
-	top:45%;
-	left:0;
-	margin:0.3em;
-}
-
-.music-cover p {
-	margin:0;
-	font-size:2em;
-}
-
-.blog-cover {
-	position:absolute;
-	color:white;
-	background-color:#FFA565;
-	left:67.3%;
-	width:33%;
-	margin:0.3em;
-
-	
-}
-
-.blog-cover p {
-	margin:0;
-	font-size:2em;
-}*/
 	
 }
 
 
 /*---- TEXT BLURB ----*/
 
+
 .blurb {
+	width:33%;
+	display:inline-block;
+
+}
+
+.text-blurb {
 	margin-top:1em;
+	padding-left:1em;
+	padding-right:1em;
+	padding-bottom:3em;
 	
 }
 
 
+.text-blurb p {
+	text-align:center;
+}
+
+.text-blurb h2 {
+	font-family: 'Cedarville Cursive', cursive;
+	text-align:center;
+}
 
 .horizontal-lines {
-	background-color:black;
-	width:200px;
-	height:200px;
+	background: url(http://www.commentnation.com/backgrounds/images/peach_and_white_diagonal_stripes_background_seamless.gif) ;
+	width:100%;
+	height:500px;
 	clear:both;
 }
+
+@media and screen 
 
 
 /*A color to save #A07C7C
