@@ -205,7 +205,7 @@ nav ul li:hover {
 
 
 
-@media screen and (min-width:570px) {
+@media screen and (min-width:620px) {
 	.image-container {
 		/*text-align:center;*/
 		display:inline-block;
@@ -229,30 +229,56 @@ nav ul li:hover {
 
 /*---- TEXT BLURB ----*/
 
+.cute-intro {
+	text-align: center;
+}
+
 
 .blurb {
-	width:33%;
+
 	display:inline-block;
+
 
 }
 
+.blurb-one, .blurb-three {
+	width:24%;
+}
+
+.blurb-two {
+	width:50%;
+}
+
 .text-blurb {
+	position:relative;
 	margin-top:1em;
-	padding-left:1em;
-	padding-right:1em;
-	padding-bottom:3em;
+	padding-left:3em;
+	padding-right:3em;
+	height:500px;
+	display:table-cell;
+	vertical-align:middle;
+	
 	
 }
 
 
 .text-blurb p {
 	text-align:center;
+
+
+
 }
 
 .text-blurb h2 {
 	font-family: 'Cedarville Cursive', cursive;
 	text-align:center;
+
 }
+
+.text-blurb p, .text-blurb h2 {
+	bottom:50px;
+}
+
 
 .horizontal-lines {
 	background: url(http://www.commentnation.com/backgrounds/images/peach_and_white_diagonal_stripes_background_seamless.gif) ;
@@ -261,7 +287,152 @@ nav ul li:hover {
 	clear:both;
 }
 
-@media and screen 
+@media screen and (max-width:805px) {
+	/*.horizontal-lines {
+		display:none;
+	}*/
 
+	.horizontal-lines {
+		height:50px;
+	}
+
+	.blurb, .text-blurb {
+		width:100%;
+	}
+} 
+
+/*---- BLOG POSTS BLURB ----*/
+
+.blog-posts-container {
+	margin-top:5em;
+	background-color:rgba(255, 157, 157, 0.48);
+	padding-bottom:2em;
+	
+}
+
+.blog-posts-heading {
+	text-align:center;
+	padding-top:1em;
+
+}
+
+.blog-posts-heading h2 {
+	font-weight: 500;
+}
+
+
+
+.blog-posts-heading h2:first-child {
+	font-family: 'Cedarville Cursive', cursive;
+	line-height: 0em;
+}
+
+.actual-post-container {
+	text-align: center;
+	padding:1em;
+}
+
+.post {
+	background-color:white;
+	border:1px solid grey;
+	width:25%;
+	display:inline-block;
+	padding:2em;
+	margin:2em;
+
+}
+
+.post a {
+	text-decoration:underline;
+}
+
+.post a:hover {
+	color:#E2E2E2;
+	text-decoration: none;
+	transition:0.3s;
+
+}
+
+@media screen and (max-width:1036px) {
+	.post {
+		display:block;
+		margin:0 auto;
+		width:50%;
+		margin-bottom:1em;
+
+	}
+
+
+}
+
+@media screen and (max-width:700px) {
+	.post {
+		width:90%;
+	}
+
+}
+
+
+/*---- CV SECTION ----
+*/
+
+.cv-container {
+	background: url(http://www.commentnation.com/backgrounds/images/peach_and_white_diagonal_stripes_background_seamless.gif);
+	margin-top: 5em;
+	width:100%;
+	/*display:table-cell;
+    vertical-align:middle;*/
+    padding:3em;
+
+}
+
+.white-box {
+	background-color:white;
+	border:1px solid #FFA565;
+	border-radius:10px;
+	padding:1em;
+	text-align: center;
+	margin:0 auto;
+	
+}
+
+
+
+
+.white-box h2 {
+	margin-top:3em;
+	font-family: 'Cedarville Cursive', cursive;
+	font-size: 2em;
+	padding:0.8em;
+	border-bottom:2px dashed pink;
+	width:90%;
+	text-align: center;
+}
+
+
+
+
+@media screen and (max-width:767px) {
+	.white-box h2 {
+		margin-top:1em;
+	}
+}
+
+@media screen and (max-width:578px) {
+	.cv-container {
+		padding:0.3em;
+	}
+}
+
+/*---- LET'S GET IN CONTACT ----*/
+
+.contact-container {
+	margin-top:5em;
+	margin-left:1em;
+	margin-right:1em;
+	margin-bottom:1em;
+	padding:1em;
+	border:2px dashed pink;
+}
 
 /*A color to save #A07C7C
