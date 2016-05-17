@@ -1,4 +1,4 @@
----- BASICS ----*/
+/*---- BASICS ----*/
 
 * {
 	padding:0px;
@@ -99,6 +99,31 @@ nav ul li:hover {
 	}
 }
 
+
+/*---- FOOTER ----*/
+
+
+.footer-container {
+	background-color: #FFB190;;
+	width:100%;
+	color:white;
+	margin-top:5em;
+	text-align: center;
+	padding-bottom:1em;
+}
+
+.footer-container h2 {
+	font-family: 'Cedarville Cursive', cursive;
+}
+
+.footer-container img {
+	width:50%;
+	opacity:0.4;
+}
+
+.footer-container p:nth-child(2) {
+	word-spacing: 30px
+}
 
 
 
@@ -433,6 +458,7 @@ nav ul li:hover {
 	margin-bottom:1em;
 	padding:1em;
 	border:2px dashed pink;
+	/*text-align: center;*/
 }
 
 /*A color to save #A07C7C
