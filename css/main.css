@@ -198,10 +198,12 @@ nav ul li:hover {
 	position:relative;	
 	text-align: center;
 	margin:0.5em;
+	margin-left:0;
 }
 
 .three-images {
 	width:100%;
+
 
 }
 
@@ -415,22 +417,38 @@ nav ul li:hover {
 */
 
 .cv-container {
-	background: url(http://www.commentnation.com/backgrounds/images/peach_and_white_diagonal_stripes_background_seamless.gif);
-	margin-top: 5em;
-	width:100%;
-	/*display:table-cell;
-    vertical-align:middle;*/
-    padding:3em;
-
-}
-
-.white-box {
 	background-color:white;
 	border:1px solid #FFA565;
 	border-radius:10px;
 	padding:1em;
 	text-align: center;
 	margin:0 auto;
+	display: block;
+
+
+}
+
+.cv-container:after {
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.cv-container div {
+	width:50%;
+	float: left;
+	display: block;
+}
+
+
+
+.white-box {
+	
+	background: url(http://www.commentnation.com/backgrounds/images/peach_and_white_diagonal_stripes_background_seamless.gif);
+	margin-top: 5em;
+	width:100%;
+    padding:3em;
 	
 }
 
@@ -441,31 +459,52 @@ nav ul li:hover {
 }
 
 
-.white-box h2 {
+.cv h2 {
 	margin-top:3em;
 	font-family: 'Cedarville Cursive', cursive;
 	font-size: 2em;
-	padding:0.8em;
-	border-bottom:2px dashed pink;
-	/*width:70%;*/
 	text-align: center;
+	border-bottom:2px dashed pink;
+	padding-bottom:0.5em;
+	margin-right:1.5em;
+	padding-top:0.5em;
+	
 
 }
 
+@media screen and (max-width:826px) {
+	.cv-container div {
+		width:100%;
+		display:block;
+	}
 
+	.cv-container img {
+	width: 50%;
 
+}
 
-@media screen and (max-width:767px) {
-	.white-box h2 {
+	.cv h2 {
+		margin-right:0;
 		margin-top:1em;
+		margin-bottom:0.5em;
 	}
 }
 
-@media screen and (max-width:578px) {
-	.cv-container {
+@media screen and (max-width:530px) {
+		.cv-container img {
+	width: 100%;
+}
+
+	.white-box {
 		padding:1em;
 	}
+
+	.cv h2 {
+		margin-right:0;
+	}
 }
+
+
 
 /*---- LET'S GET IN CONTACT ----*/
 
@@ -484,21 +523,39 @@ nav ul li:hover {
 	text-align: center;
 }
 
+
+
 form {
 	background-color: #FFF2F2;
-	margin-left:16em;
-	margin-right:16em;
+	border-radius: 10px;
 	padding-bottom:0.5em;
+	padding-top:0.5em;
+	width:50%;
+	margin:0 auto;
+
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:930px) {
+	form {
+		width:80%;
+	}
+
+	form input[type=text], form input[type=email], form textarea {
+		width:75%;
+	}
 	
 }
 
 
-form .label {
-	text-align: left:;
+@media screen and (max-width:550px) {
+	form {
+		width:100%;
+	}
+
+	
 }
+
+
 input[type=text], input[type=email], textarea {
   padding:0.3em;
   border-radius:5px;
@@ -507,7 +564,17 @@ input[type=text], input[type=email], textarea {
  
 }
 
+/*@media screen and (max-width:1075px) {
+	input[type=text], input[type=email], textarea {
+		width:50%;
+	}
+}
+*/
+
+
+
 textarea {
+	height:200px;
 
 }
 
