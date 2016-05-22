@@ -1,0 +1,119 @@
+/*---- TEXT HEADING ----*/
+
+#about-header {
+	margin-top:5em;
+/*	margin-right: 2.5em;
+	margin-left:2.5em;*/
+}
+
+#about-header h1:first-child {
+	font-family: 'Cedarville Cursive', cursive;
+	color:#b7e1d4;
+	text-align: left;
+	margin-left:7%;
+
+}
+
+#about-header h1:nth-child(2){
+	font-size: 15vw;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+#about-header h1:last-child {
+	font-family: 'Cedarville Cursive', cursive;
+	text-align: right;
+	margin-right:7%;
+	color:#b7e1d4;
+}
+
+/*---- PORTRAIT ----*/
+
+.port-container {
+	text-align:center;
+	margin-top:5em;
+}
+
+.girl-guitar {
+	width:100%;
+	border-radius: 10px;
+
+}
+
+.port-item {
+	padding:0.5em;
+}
+
+.vcenter {
+	top:50%;
+}
+
+/*---- BLOCKS ----*/
+
+.block-section {
+	margin-top:7em;
+}
+
+.block{
+	width:50%;
+	height:100px;
+	margin-bottom:0.2em;
+}
+
+.block1 {
+	background-color:#e9f7f2;
+	margin-left:5em;
+}
+
+.block2 {
+	background-color:#b7e1d4;
+	margin-left:15em;
+}
+
+.block3 {
+	background-color:#c7f8e9;
+	margin-left:30em;
+
+}
+
+.block {
+	padding-top:30px;
+	padding-left:30px;
+}
+
+.block p {
+	display: inline;
+	font-size: 
+}
+
+.fa-graduation-cap, .fa-music, .fa-headphones {
+	font-size: 3em;
+}
+
+@media screen and (max-width:1113px) {
+	.block1 {
+		margin-left:5em;
+	}
+
+	.block2 {
+		margin-left:10em;
+	}
+
+	.block3 {
+		margin-left:20em;
+	}
+}
+
+@media screen and (max-width:770px) {
+	.block {
+		margin:0 auto;
+		margin-bottom:0.2em;
+		width:80%;
+	}
+}
+
+@media screen and (max-width:550px) {
+	.block {
+		width:95%;
+		margin-bottom:0.3em;
+	}
+}
