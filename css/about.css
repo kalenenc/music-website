@@ -31,6 +31,9 @@
 .port-container {
 	text-align:center;
 	margin-top:5em;
+	position:relative;
+
+
 }
 
 .girl-guitar {
@@ -41,11 +44,26 @@
 
 .port-item {
 	padding:0.5em;
+	display:inline-block;
+	width:45%;
+
+
 }
 
-.vcenter {
+.port-container h2 {
+	font-size: 1em;
 	top:50%;
+
+	
 }
+
+@media screen and (max-width: 770px) {
+	.port-item {
+		width:100%;
+	}
+}
+
+
 
 /*---- BLOCKS ----*/
 
@@ -54,9 +72,12 @@
 }
 
 .block{
+	position:relative;
 	width:50%;
 	height:100px;
 	margin-bottom:0.2em;
+	padding-top:30px;
+	padding-left:30px;
 }
 
 .block1 {
@@ -75,17 +96,23 @@
 
 }
 
-.block {
-	padding-top:30px;
-	padding-left:30px;
+
+.block-text {
+	position:absolute;
+	top:1.5em;
+	left:7em;
+	/*text-transform: uppercase;*/
 }
 
-.block p {
-	display: inline;
-	font-size: 
+
+@media screen and (max-width:656px) {
+	.block-text {
+		top:0.5em;
+	}
 }
 
-.fa-graduation-cap, .fa-music, .fa-headphones {
+
+.fa-graduation-cap, .fa-play, .fa-headphones {
 	font-size: 3em;
 }
 
@@ -117,3 +144,76 @@
 		margin-bottom:0.3em;
 	}
 }
+
+/*---- ABOUT DESCRIPTION ----*/
+
+.about-para {
+	margin-top:5em;
+	text-align:center;
+	margin-left:15em;
+	margin-right:15em;
+}
+
+@media screen and (max-width:910px) {
+	.about-para {
+		margin-right:7em;
+		margin-left:7em;
+	}
+}
+
+@media screen and (max-width:550px) {
+	.about-para {
+		margin-right:0.5em;
+		margin-left:0.5em;
+	}
+}
+
+/*---- DIAMOND LINKS ----*/
+
+.diamond-link-container {
+	margin-top:5em;
+	text-align: center;
+	
+
+}
+
+.diamond {
+	padding:1em;
+}
+
+.diamond-link:hover{
+	opacity:0.5;
+	transition:0.5s;
+}
+
+
+@media screen and (max-width:980px) {
+	.big-diamond {
+		width:35%;
+	}
+
+	.little-diamond {
+		width:20%;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.diamond {
+		display:block;
+	}
+
+	.big-diamond {
+		width:100%;
+		text-align: center;
+		margin:0 auto;
+	}
+
+	.little-diamond {
+		width:50%;
+		margin:0 auto;
+	}
+
+
+}
+
+/*#fcdebb #fdb5bf #fcf2c8 #f9bbae*/
