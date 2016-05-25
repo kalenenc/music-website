@@ -1,0 +1,77 @@
+/*---- HEADER ---- */
+
+.music-header {
+	text-align: center;
+	margin-top:5em;
+}
+
+.music-header h1:first-child {
+	font-family: 'Cedarville Cursive', cursive;
+	color:#BDBDBD;
+
+}
+
+.music-header h1:last-child {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 15vw;
+}
+
+/*---- DOTTED VERTICAL LINE ----*/
+
+.dotted-vertical-line {
+	text-align: center;
+
+}
+
+.dotted-vertical-line h4 {
+	margin:0;
+}
+
+.dotted-vertical-line h2 {
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+/*---- MUSIC LIST ----*/
+
+.music-list {
+	margin-left:1em;
+}
+
+.music-list img {
+	width:25%;
+}
+
+.fa-play {
+	font-size: 0.8em;
+
+}
+
+.music-list ul {
+	margin-top: 3em;
+}
+
+.music-list ul li:first-child {
+	border-top:0.5px dotted black;
+	padding-top:0.5em;
+}
+
+.music-list ul li {
+	border-bottom:0.5px dotted black;
+	padding-bottom:0.5em;
+	list-style-type: none;
+	
+}
+
+.left {
+	
+
+}
+
+i {
+	display:inline;
+}
+
+.right{
+	float:right;
+	padding-right:1em;
+}
