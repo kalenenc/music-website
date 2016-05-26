@@ -52,26 +52,45 @@
 
 .music-list ul li:first-child {
 	border-top:0.5px dotted black;
-	padding-top:0.5em;
+
 }
 
 .music-list ul li {
 	border-bottom:0.5px dotted black;
-	padding-bottom:0.5em;
+
 	list-style-type: none;
 	
 }
 
-.left {
-	
-
+.music-list ul li p {
+	padding:0.3em;
+	margin-bottom:0;
 }
+
 
 i {
 	display:inline;
+	padding-right: 1em;
+}
+
+i:hover {
+	color:grey;
+	cursor:pointer;
 }
 
 .right{
 	float:right;
 	padding-right:1em;
+	display:inline;
 }
+
+.right:hover {
+	color:grey;
+	cursor:pointer;
+}
+
+.left {
+	float:left;
+	display:inline;
+}
+
