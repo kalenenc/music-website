@@ -1,0 +1,14 @@
+---
+layout: main-layout
+---
+
+<h1>Okay let's see if this works</h1>
+
+<ul>
+{% for post in site.posts %}
+	<li>
+		<a href="{{post.url}}">{{post.title}}</a>
+		<p></p>
+	</li>
+{% endfor %}
+</ul>
