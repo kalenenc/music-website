@@ -22,17 +22,35 @@
 <link rel="stylesheet" type="text/css" href="{{site.url}}/../css/music.css">
 <!-- Link to post css -->
 <link rel="stylesheet" type="text/css" href="{{site.url}}/../css/post.css">
+<!-- Link to blog css -->
+<link rel="stylesheet" type="text/css" href="{{site.url}}/../css/blog.css">
 
 </head>
 <body>
 
 	{% include header.html %}
 
-	<h3>hi there</h3>
-	<section class="post-container">
+	<!-- <section class="post-container">
+		<div class="inner-post-container"></div>
 		{{content}}
+	</section> -->
 
+	<section class="blog-list">
+		<ul>
+			<li>
+				<div class="date">
+					{{post.meta}}
+				</div>
+				<span class="post-title">
+					{{post.title}}
+				</span> 
+				{{content}}	
+			</li>
+		</ul>
 	</section>
+		
+
+
 		
 
 	{% include footer.html %}

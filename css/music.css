@@ -41,7 +41,7 @@
 	width:25%;
 }
 
-.fa-play {
+.music-list .fa-play {
 	font-size: 0.8em;
 
 }
@@ -57,7 +57,6 @@
 
 .music-list ul li {
 	border-bottom:0.5px dotted black;
-
 	list-style-type: none;
 	
 }
@@ -68,13 +67,16 @@
 }
 
 
-i {
+
+
+.music-list .fa-play {
 	display:inline;
+	color:#757575;
 	padding-right: 1em;
 }
 
-i:hover {
-	color:grey;
+.music-list .fa-play:hover {
+	color:#D4D4D4;
 	cursor:pointer;
 }
 
@@ -85,7 +87,7 @@ i:hover {
 }
 
 .right:hover {
-	color:grey;
+	color:#D4D4D4;
 	cursor:pointer;
 }
 

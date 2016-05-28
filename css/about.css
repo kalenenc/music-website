@@ -47,8 +47,11 @@
 	display:inline-block;
 	width:45%;
 
-
 }
+
+/*.port-2 {
+	font-family: 'Julius Sans One', sans-serif;
+}*/
 
 .port-container h2 {
 	font-size: 1em;
@@ -114,6 +117,15 @@
 
 .fa-graduation-cap, .fa-play, .fa-headphones {
 	font-size: 3em;
+	color:#3AA58E;
+}
+
+.block2 p .fa-play {
+	color:#DEFFF8;
+}
+
+.fa-music {
+	color:#797979;
 }
 
 @media screen and (max-width:1113px) {

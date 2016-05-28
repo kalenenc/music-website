@@ -2,13 +2,25 @@
 layout: main-layout
 ---
 
-<h1>Okay let's see if this works</h1>
 
-<ul>
-{% for post in site.posts %}
-	<li>
-		<a href="{{post.url}}">{{post.title}}</a>
-		<p></p>
-	</li>
-{% endfor %}
-</ul>
+<section class="blog-list">
+
+	<ul>
+	{% for post in site.posts %}
+		<li>
+			<!-- <a href="{{post.url}}"> -->
+				<div class="date">
+					{{post.meta}}
+				</div>
+				<span class="post-title">
+					{{post.title}}
+				</span> 
+			<!-- </a> -->
+			 {{post.excerpt}} 
+				
+			<hr />
+			
+		</li>
+	{% endfor %}
+	</ul>
+</section>

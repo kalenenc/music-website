@@ -1,0 +1,23 @@
+.blog-list {
+	width:80%;
+	margin:0 auto;
+}
+
+.date {
+	font-size:1em;
+}
+
+.post-title {
+	font-size: 2em;
+	font-weight: 300;
+	text-transform: uppercase;
+	color:#b7e1d4;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+hr {
+
+}
