@@ -7,7 +7,12 @@ date: 2016-05-27
 ---
 
 
-
+<div class="date">
+	27 May 2016
+</div>
+<span class="post-title">
+	Piano Magic
+</span> 
 
 
 <p>

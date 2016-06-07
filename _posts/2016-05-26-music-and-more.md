@@ -7,7 +7,12 @@ date: 2016-05-26
 ---
 
 
-
+<div class="date">
+	26 May 2016
+</div>
+<span class="post-title">
+	Music and More
+</span> 
 
 
 <p>
