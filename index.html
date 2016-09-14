@@ -44,8 +44,8 @@ layout: main-layout
 	</div>		
 	<div class="blurb blurb-two">		
 		<section class="text-blurb">
-			<h2>Lorem</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nisl vestibulum, bibendum ante et, pretium eros. Phasellus tempus iaculis bibendum. Proin malesuada nisi non nibh malesuada luctus. Cras efficitur risus ut magna ullamcorper dapibus. Nam eget consectetur urna, vitae sodales dolor. Aliquam eget elementum est. Phasellus eget tincidunt leo. Pellentesque nec velit magna. Cras dignissim cursus magna vitae rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+			<h2>Hello</h2>
+			<p>I'm Lynne, and this is my personal music portfolio website. Here you will find my music, my personal blog, my resume, and more. Please contact me if you have any questions or simply want to reach out.</p>
 		</section>
 	</div>		
 	<div class="blurb blurb-three">
@@ -60,18 +60,28 @@ layout: main-layout
 		<h2>BLOG POSTS</h2>
 	</div>
 	<div class="actual-post-container">
-		<div class="post post1">
-			<a href="{{site.url}}/blog"><h3>LOREM</h3></a>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nisl vestibulum, bibendum ante et, pretium eros. Phasellus tempus iaculis bibendum. Proin malesuada nisi non nibh malesuada luctus. Cras efficitur risus ut magna ullamcorper dapibus. Nam eget consectetur urna, vitae sodales dolor. Aliquam eget elementum est. Phasellus eget tincidunt leo. Pellentesque nec velit magna.</p>
-		</div>
-		<div class="post post2">
-			<a href="{{site.url}}/blog"><h3>LOREM</h3></a>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nisl vestibulum, bibendum ante et, pretium eros. Phasellus tempus iaculis bibendum. Proin malesuada nisi non nibh malesuada luctus. Cras efficitur risus ut magna ullamcorper dapibus. Nam eget consectetur urna, vitae sodales dolor. Aliquam eget elementum est. Phasellus eget tincidunt leo. Pellentesque nec velit magna.</p>
-		</div>
-		<div class="post post3">
-			<a href="{{site.url}}/blog"><h3>LOREM</h3></a>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis nisl vestibulum, bibendum ante et, pretium eros. Phasellus tempus iaculis bibendum. Proin malesuada nisi non nibh malesuada luctus. Cras efficitur risus ut magna ullamcorper dapibus. Nam eget consectetur urna, vitae sodales dolor. Aliquam eget elementum est. Phasellus eget tincidunt leo. Pellentesque nec velit magna.</p>
-	</div>
+		<div class="blog-list">
+
+	<ul>
+	{% for post in site.posts %}
+		<li>
+			<a href="{{site.url}}/{{post.url}}">
+				
+				<div class="date">
+					{{post.meta}}
+				</div>
+				<span class="post-title">
+					{{post.title}}
+				</span> 
+			</a>
+			
+				
+			<hr />
+			
+		</li>
+	{% endfor %}
+	</ul>
+</div>
 	</div>
 </section>
 
@@ -88,6 +98,7 @@ layout: main-layout
 							<h2 >Check out my 
 							curriculumn vitae</h2>
 						</a>
+						<p>(To be updated once resume is updated...)</p>
 					</div>
 			</div>		
 		</div>	

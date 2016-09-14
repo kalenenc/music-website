@@ -341,6 +341,10 @@ nav ul li:hover {
 	
 }
 
+.blog-posts-container .blog-list .post-title {
+	color: white;
+}
+
 .blog-posts-heading {
 	text-align:center;
 	padding-top:1em;
