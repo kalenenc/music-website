@@ -569,14 +569,6 @@ input[type=text], input[type=email], textarea {
  
 }
 
-/*@media screen and (max-width:1075px) {
-	input[type=text], input[type=email], textarea {
-		width:50%;
-	}
-}
-*/
-
-
 
 textarea {
 	height:200px;
