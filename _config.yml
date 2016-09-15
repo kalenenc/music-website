@@ -2,7 +2,7 @@ name: "Music Website"
 description: "A Website for a Musician"
 
 #url: "http://127.0.0.1:4000"
-url: "http://kalenenc.github.io/music-website/"
+url: "http://kalenenc.github.io/music-website"
 
 #paginate: 10
 
