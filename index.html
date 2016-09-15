@@ -4,6 +4,7 @@ layout: main-layout
 
 <!-- HEADER IMAGE -->
 
+<h1>hi</h1>
 <section class="intro">
 	<img src="photos/sunset-hair.jpg" alt="sunset girl" />
 		<h2>Music in Motion</h2>
@@ -65,7 +66,7 @@ layout: main-layout
 	<ul>
 	{% for post in site.posts %}
 		<li>
-			<a href="{{site.url}}/{{post.url}}">
+			<a href="{{site.url}}{{post.url}}">
 				
 				<div class="date">
 					{{post.meta}}
