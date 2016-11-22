@@ -1,1 +1,1 @@
-A website I'm making for a very talented musician :)
+Website I made for a talented musician.
